@@ -1,0 +1,611 @@
+/* ==============header-start=========== */
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-menu,
+.navmenu-wrp .fa.fa-times {
+    display: none;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.logo img {
+    max-width: 124px;
+}
+
+.navmenu-wrp {
+    display: inline-block;
+    width: calc(100% - 165px);
+}
+
+.navmenu {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.navmenu .nav-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.login-signup .nav-item {
+    margin-right: 0px;
+}
+
+.login-signup {
+    float: right;
+}
+
+.navmenu .nav-item .nav-link {
+    color: #666;
+    font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.navmenu .nav-link {
+    cursor: pointer;
+}
+
+.submenu {
+    background-color: #a5a5a5;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    width: 200px;
+    display: none;
+}
+
+.submenu a {
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.submenu a:hover {
+    background-color: #000;
+}
+
+.navmenu .nav-item .fa {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.login-signup .fa {
+    margin-right: 10px;
+}
+
+.login-signup .fa-arrow-right {
+    border: 2px solid#666;
+    border-right: 0;
+    border-radius: 5px 3px 3px 5px;
+    padding: 1px 1px 1px 2px;
+    font-size: 9px !important;
+}
+
+
+/* ==============header-end=========== */
+
+
+/* ===========model-start============ */
+
+.common-model {
+    position: relative;
+}
+
+.model-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.model-body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    transform: translate(-50%, -50%);
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 600px;
+    height: 100%;
+    max-height: 500px;
+}
+
+.model-body .fa {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.company-app-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 24px;
+    width: auto;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+
+.flag {
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.flag img {
+    width: 23px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.company-app-input .form-group {
+    position: relative;
+    top: 8px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.registration .logo {
+    margin-top: 28px;
+}
+
+.registration .btn,
+.registration-otp .btn {
+    font-size: 12px;
+    padding: 16px 32px;
+    color: #fff;
+    background: #212121;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.model-body .fa.fa-caret-down {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.registration,
+.registration-otp {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.company-app-input input.form-control,
+.company-app-input input.form-control:hover,
+.company-app-input input.form-control:focus {
+    border: none;
+    box-shadow: none !important;
+}
+
+.registration p {
+    margin: 24px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.registration ul {
+    padding: 0;
+    list-style-type: none;
+    color: #757575;
+    font-size: 12px;
+    margin: 8px 0 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.registration ul li {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.registration-otp h3 {
+    margin-top: 26px;
+}
+
+.registration-otp p {
+    color: #212121;
+    font-size: 14px;
+    margin-bottom: 70px;
+}
+
+.reg-num-edit {
+    margin-left: 10px;
+    color: #304ffe;
+    cursor: pointer;
+}
+
+.registration-otp input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.opt-time,
+.resend-otp {
+    color: #304ffe;
+    margin-top: 20px;
+    display: block;
+}
+
+.registration-otp .btn {
+    margin-top: 35px;
+}
+
+.model-body .fa.fa-arrow-left {
+    left: 20px;
+    right: auto !important;
+}
+
+.common-model h4 {
+    border-bottom: 2px solid #f7f8fa;
+    padding: 10px 0px;
+}
+
+.common-model h4 span {
+    display: block;
+    font-size: 14px;
+    color: #757575;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.location-btn {
+    font-size: 14px;
+    padding: 15px 15px;
+    color: #fff;
+    background: #304ffe;
+    border-radius: 4px;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    position: relative;
+    margin: 20px auto 20px;
+}
+
+.location-btn:last-of-type {
+    background-color: transparent;
+    border: 1px solid #304ffe;
+    color: #304ffe;
+}
+
+.location-btn .fa {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    right: auto;
+}
+
+.geolocation-img {
+    width: 100%;
+}
+
+.geolocation-search-input {
+    background-color: #212121;
+    text-align: left;
+    padding: 10px 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.geolocation-search-input>input {
+    border: none;
+    border-bottom: 1px solid #666;
+    display: block;
+    color: #f0f0f0;
+    background-color: #212121;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.geolocation-search-input>span {
+    font-size: 10px;
+    font-weight: 500;
+    color: #666;
+}
+
+.geolocation-search .location-btn {
+    border: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid #eee !important;
+    max-width: 100%;
+    display: block;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.geolocation-list {
+    overflow-y: scroll;
+    height: 230px;
+}
+
+.geolocation-list li {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-align: left;
+    position: relative;
+    padding-left: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.geolocation-list li .fa-map-marker {
+    color: #212121;
+    right: auto;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+.geolocation-list li span {
+    font-size: 12px;
+    color: #757575;
+    display: block;
+}
+
+.geolocationform {
+    display: inline-block;
+}
+
+.geolocationform .geolocationform-map {
+    width: 60%;
+    float: left;
+    height: 341px;
+}
+
+.geolocationform .geolocationform-inner {
+    width: 38%;
+    float: right;
+    text-align: left;
+}
+
+.geolocationform-inner .form-group {
+    margin-bottom: 16px;
+    position: relative;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.geolocationtitel {
+    position: absolute;
+    background-color: #fff;
+    top: -8px;
+    font-size: 12px;
+    padding: 0 8px;
+    left: 8px;
+    color: #999;
+}
+
+.geolocationselected {
+    font-size: 12px;
+    font-weight: 500;
+    color: #212121;
+    display: inline-block;
+    max-height: 36px;
+    overflow: hidden;
+}
+
+.geolocationchange {
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #304fee;
+}
+
+.geolocation-type a {
+    border-radius: 12px;
+    background-color: #999;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.geolocation-type a.active {
+    background-color: #304fee;
+    color: #fff;
+}
+
+.geolocationform .form-group.geolocation-type {
+    border: none;
+}
+
+.geolocationform-inner>.btn {
+    width: 100%;
+    background-color: #212121;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+
+/* ===========model-end============ */
+
+
+/* =============media-quarey-start============= */
+
+
+/* ===========only-for-mobile-menu========== */
+
+@media (min-width: 1025px) {
+    .navmenu .nav-item:hover .submenu {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navmenu-wrp>i {
+        display: block !important;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .navmenu-wrp>.navmenu {
+        width: 100%;
+    }
+    .mobile-menu {
+        margin-top: 10px;
+        float: right;
+        display: block;
+    }
+    .mobile-menu>span {
+        height: 3px;
+        width: 20px;
+        background-color: #888888;
+        display: block;
+        margin-bottom: 2px;
+    }
+    .navmenu-wrp .nav-item {
+        display: block;
+        margin-right: 0;
+    }
+    .navmenu-wrp {
+        position: fixed;
+        top: 0;
+        background-color: #f4f4f4;
+        height: 100%;
+        z-index: 2;
+        right: 0;
+        width: 320px;
+        padding-top: 20px;
+        margin-right: -320px;
+        transition: all 0.2s linear;
+    }
+    .navmenu-wrp.menuopen {
+        margin-right: 0px;
+        z-index: 10;
+    }
+    .login-signup {
+        float: none;
+        border-top: 2px solid#888888;
+        width: 100%;
+    }
+    .navmenu .nav-item .fa-chevron-up {
+        padding: 10px 5px;
+    }
+    .submenu.submenu-open {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .navmenu .nav-item .fa.fa-chevron-down {
+        transform: rotate(270deg);
+        transition: all linear 0.2s;
+    }
+    .navmenu .nav-item .fa.submenu-arrow-rotate {
+        transform: rotate(360deg);
+    }
+    .menuopen:before {
+        background-color: rgba(77, 77, 77, 0.5);
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 320px;
+        width: 100%;
+        height: 100%;
+        min-width: 1024px;
+    }
+}
+
+
+/* ===========only-for-mobile-menu========== */
+
+
+/* ===========only-for-model========== */
+
+@media (max-width: 767px) {
+    .model-body {
+        width: 90%;
+        overflow-y: scroll;
+    }
+    .registration .logo {
+        max-width: 200px;
+        margin-right: 0;
+    }
+    .geolocationform .geolocationform-map,
+    .geolocationform .geolocationform-inner {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+    .geolocationform-inner>.btn {
+        margin-top: 0px;
+    }
+    .registration-otp p {
+        margin-bottom: 140px;
+    }
+    .geolocation-img {
+        margin-top: 90px;
+    }
+    .geolocationform-map.ng-tns-c62-0 {
+        margin-bottom: 20px;
+    }
+    .registration ul {
+        margin-bottom: 113px;
+    }
+    .registration .btn,
+    .registration-otp .btn {
+        margin-bottom: 0;
+    }
+    .geolocation h4,
+    .geolocation-search h4,
+    .geolocationform h4 {
+        font-size: 16px;
+    }
+}
+
+
+/* ===========only-for-model========== */

@@ -1,0 +1,340 @@
+/* ======common-start========= */
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@font-face {
+    font-family: "axiformabook";
+    src: url("assets/font/kastelov_-_axiforma_book-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformaextrabold";
+    src: url("assets/font/kastelov_-_axiforma_extrabold-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_extrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformaheavy";
+    src: url("assets/font/kastelov_-_axiforma_heavy-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_heavy-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformalight";
+    src: url("assets/font/kastelov_-_axiforma_light-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformamedium";
+    src: url("assets/font/kastelov_-_axiforma_medium-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformaregular";
+    src: url("assets/font/kastelov_-_axiforma_regular-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformasemibold";
+    src: url("assets/font/kastelov_-_axiforma_semibold-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "axiformathin";
+    src: url("assets/font/kastelov_-_axiforma_thin-webfont.woff2") format("woff2"), url("assets/font/kastelov_-_axiforma_thin-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/font/PlayfairDisplay-SemiBold.eot');
+    src: url('assets/font/PlayfairDisplay-SemiBold.eot?#iefix') format('embedded-opentype'), url('assets/font/PlayfairDisplay-SemiBold.woff2') format('woff2'), url('assets/font/PlayfairDisplay-SemiBold.woff') format('woff'), url('assets/font/PlayfairDisplay-SemiBold.ttf') format('truetype'), url('assets/font/PlayfairDisplay-SemiBold.svg#PlayfairDisplay-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/font/PlayfairDisplay-Black.eot');
+    src: url('assets/font/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'), url('assets/font/PlayfairDisplay-Black.woff2') format('woff2'), url('assets/font/PlayfairDisplay-Black.woff') format('woff'), url('assets/font/PlayfairDisplay-Black.ttf') format('truetype'), url('assets/font/PlayfairDisplay-Black.svg#PlayfairDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/font/PlayfairDisplay-Regular.eot');
+    src: url('assets/font/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('assets/font/PlayfairDisplay-Regular.woff2') format('woff2'), url('assets/font/PlayfairDisplay-Regular.woff') format('woff'), url('assets/font/PlayfairDisplay-Regular.ttf') format('truetype'), url('assets/font/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary: #f4f4f4;
+    --pink: #ef2673;
+    --brown: #767676;
+    --black: #222;
+}
+
+agm-map {
+    height: 300px;
+    display: inline-block;
+    width: 300px;
+}
+
+body {
+    font-family: axiformaregular !important;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body * {
+    outline: none !important;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+    color: #666;
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    padding: 10px 0;
+    display: none !important;
+}
+
+.breadcrumb li a span {
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0 2px;
+    color: #fff;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background-color: rgba(77, 77, 77, 0.5);
+}
+
+.blog-wrp,
+.blog-slider,
+.blog-list-wrp,
+.blog-detail-wrp {
+    font-family: 'Playfair Display', serif;
+}
+
+.validation-msg {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #f00;
+    text-transform: capitalize;
+}
+
+
+/* ======common-end========= */
+
+
+/* =====catogory-slider-start====== */
+
+.item {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    left: -50px;
+    outline: none;
+}
+
+.rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    right: -50px;
+    outline: none;
+}
+
+.myPoint {
+    list-style-type: none;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.myPoint li {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.55);
+    padding: 4px;
+    margin: 0 3px;
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: 0.4s;
+}
+
+.myPoint li.active {
+    background: #6b6b6b;
+    transform: scale(1.2);
+}
+
+.category .ngucarousel {
+    overflow: visible !important;
+}
+
+.category .ngu-touch-container {
+    overflow: hidden;
+}
+
+.category .leftRs,
+.category .rightRs {
+    box-shadow: none !important;
+    height: 35px !important;
+    width: 35px !important;
+    background-color: transparent;
+    border: 1px solid#e7e7e7;
+    color: #e7e7e7;
+    transition: all 0.5s linear;
+}
+
+.category-row-with-carousel .fa {
+    font-size: 25px;
+    line-height: 1.3em;
+}
+
+.category .leftRs:hover,
+.category .rightRs:hover {
+    border: 1px solid#666;
+    color: #666;
+}
+
+.category-titel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #242424;
+    margin-top: 56px;
+    margin-bottom: 24px;
+}
+
+.category-subtitel {
+    font-size: 14px;
+    color: #343434;
+    font-weight: 400;
+    margin: 10px 0 0;
+    display: inline-block;
+}
+
+.category a {
+    display: block;
+}
+
+
+/* =====catogory-slider-end====== */
+
+
+/* =============media-quarey-start============= */
+
+@media (max-width: 1280px) {
+    .category>.container {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.category {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    .category>.container {
+        max-width: 80%;
+    }
+    .category .rightRs {
+        right: -40px;
+    }
+    .category .leftRs {
+        left: -40px;
+    }
+}

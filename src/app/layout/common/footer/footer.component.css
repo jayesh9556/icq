@@ -1,0 +1,116 @@
+/* =============footer-start=========== */
+
+.footer {
+    background-color: #000;
+}
+
+.footer-top {
+    padding-top: 18px;
+    padding-bottom: 17px;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-titel {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-middel {
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+    padding-top: 19px;
+    padding-bottom: 20px;
+}
+
+.footer li {
+    display: inline-block;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    margin-right: 32px;
+    line-height: 2em;
+}
+
+.footer li:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.footer-middel li {
+    line-height: 2.1em;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.footer-subtitel {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.copyright span {
+    color: #fff;
+    margin-left: 16px;
+    font-size: 12px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.copyright img {
+    width: 150px;
+}
+
+.social-link .fa {
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-link li {
+    margin-right: 20px;
+}
+
+.app-download img {
+    width: 100px;
+}
+
+
+/* =============footer-end=========== */
+
+
+/* =============media-quarey-start============= */
+
+@media (max-width: 992px) {
+    .copyright>a {
+        display: block;
+    }
+    .copyright {
+        max-width: 300px;
+    }
+    .copyright span {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-bottom {
+        display: block;
+    }
+    .copyright {
+        width: 100%;
+        max-width: 100%;
+    }
+    .social-link {
+        margin: 20px 0;
+    }
+}

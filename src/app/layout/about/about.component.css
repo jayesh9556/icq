@@ -1,0 +1,169 @@
+.page-titel-wrp {
+    margin: 0;
+    padding: 32px 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.page-titel {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #424242;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.who-are-we {
+    background-color: #f7f8fa;
+}
+
+.who-are-we-inner {
+    color: #424242;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 32px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    margin: 32px auto;
+    text-align: left;
+}
+
+.titel {
+    margin: 0 0 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    color: #222;
+}
+
+.about-content {
+    margin: 24px 0 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: #555;
+}
+
+.about-map {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter-inner {
+    display: inline-block;
+    margin-right: 70px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+.counter-number {
+    color: #949494;
+    font-size: 46px;
+}
+
+.counter-content {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #949494;
+    line-height: 0.5em;
+}
+
+.our-team img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.our-team-inner {
+    background-color: var(--primary);
+    width: calc(33.33% - 12px);
+    display: inline-block;
+}
+
+.our-team .fa-linkedin {
+    background-color: #0e6c9a;
+    color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.our-team h5 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #555;
+}
+
+.our-team p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #555;
+}
+
+@media (max-width: 1024px) {
+    .page-titel-wrp {
+        padding: 15px;
+    }
+    .who-are-we-inner {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .titel {
+        font-size: 22px;
+    }
+    .counter-number {
+        font-size: 35px;
+    }
+    .counter-inner {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .our-team-inner {
+        padding: 10px !important;
+    }
+    .our-team p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .who-are-we-inner {
+        padding: 10px;
+    }
+    .titel {
+        font-size: 18px;
+    }
+    .about-content {
+        margin: 10px 0 10px;
+        font-size: 14px;
+    }
+    .counter-inner {
+        display: block;
+        margin-right: 0;
+        padding-bottom: 10px;
+    }
+    .our-team-inner {
+        width: 100%;
+        margin: 0 0 10px !important;
+    }
+}

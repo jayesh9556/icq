@@ -1,0 +1,155 @@
+.blog-main-titel {
+    font-weight: 900;
+    color: #222;
+    border-bottom: 2px solid #222;
+    padding-bottom: 20px;
+    font-size: 28px;
+    margin: 30px 0;
+}
+
+.blog-date {
+    font-size: 11px;
+    color: #767676;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.blog-titel {
+    font-size: 34px;
+    font-weight: 400;
+    color: #222;
+}
+
+.blog-content {
+    font-family: lora;
+    color: #545353;
+}
+
+.blog {
+    width: calc(75% - 15px);
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebar {
+    width: 25%;
+    display: inline-block;
+}
+
+.blog-inner {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.blog-inner:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.blog-list {
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.blog-list img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.blog-list h6 {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    width: calc(100% - 100px);
+    color: #222;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 10px 30px;
+    color: #fff;
+    background: #212121;
+    border-radius: 4px;
+    font-weight: 600;
+    border: none;
+    margin: 20px auto 30px;
+    display: block;
+}
+
+.sidebar .blog-main-titel {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.sidebar img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #000;
+}
+
+.sidebar li a {
+    color: #fff;
+    padding: 10px 5px;
+}
+
+.category-subtitel {
+    display: block;
+    color: var(--pink);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.category-desc {
+    color: #222;
+}
+
+@media (max-width: 992px) {
+    .blog-main-titel {
+        font-weight: 900;
+        color: #222;
+        border-bottom: 2px solid #222;
+        padding-bottom: 10px;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .blog-titel {
+        font-size: 16px;
+    }
+    .category-desc {
+        font-size: 14px;
+    }
+    .blog-list {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .category .category-row-with-carousel {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .blog,
+    .blog-inner,
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+    }
+    .sidebar>a {
+        margin-right: 10px;
+    }
+    .social-link {
+        margin-bottom: 20px;
+    }
+}

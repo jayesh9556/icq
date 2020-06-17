@@ -1,0 +1,40 @@
+.term-policy-content {
+    background-color: #f7f8fa;
+    padding: 50px 0px;
+    border-top: 1px solid #eee;
+}
+
+.term-policy-content-inner {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #eee;
+}
+
+.term-policy-content p {
+    color: #424242;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .term-policy-titel {
+        margin: 20px 0 !important;
+        font-size: 24px;
+    }
+    .term-policy-content {
+        background-color: #f7f8fa;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .term-policy-titel {
+        margin: 10px 0 !important;
+        font-size: 20px;
+    }
+    .term-policy-content-inner {
+        padding: 10px;
+    }
+    .term-policy-content-inner h4 {
+        font-size: 16px;
+    }
+}

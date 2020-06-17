@@ -1,0 +1,33 @@
+[{
+    "category": [{
+            "category_img": "assets/img/category1.jpg",
+            "category_titel": "updates",
+            "category_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores "
+        },
+        {
+            "category_img": "assets/img/category2.jpg",
+            "category_titel": "updates",
+            "category_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores "
+        },
+        {
+            "category_img": "assets/img/category3.jpg",
+            "category_titel": "updates",
+            "category_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores "
+        },
+        {
+            "category_img": "assets/img/category4.jpg",
+            "category_titel": "updates",
+            "category_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores "
+        },
+        {
+            "category_img": "assets/img/category5.jpg",
+            "category_titel": "updates",
+            "category_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores "
+        },
+        {
+            "category_img": "assets/img/category6.jpg",
+            "category_titel": "updates",
+            "category_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores "
+        }
+    ]
+}]

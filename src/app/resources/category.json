@@ -1,0 +1,37 @@
+[
+  {
+    "titel": "Category",
+    "category": [
+      {
+        "category_link": "https://www.google.com/",
+        "category_img": "assets/img/category1.jpg",
+        "category_titel": "Acupuncture"
+      },
+      {
+        "category_link": "https://www.google.com/",
+        "category_img": "assets/img/category2.jpg",
+        "category_titel": "Chiropractor"
+      },
+      {
+        "category_link": "https://www.google.com/",
+        "category_img": "assets/img/category3.jpg",
+        "category_titel": "Massage therapist"
+      },
+      {
+        "category_link": "https://www.google.com/",
+        "category_img": "assets/img/category4.jpg",
+        "category_titel": "Osteopathy"
+      },
+      {
+        "category_link": "https://www.google.com/",
+        "category_img": "assets/img/category5.jpg",
+        "category_titel": "Personal Trainer"
+      },
+      {
+        "category_link": "https://www.google.com/",
+        "category_img": "assets/img/category6.jpg",
+        "category_titel": "Physio"
+      }
+    ]
+  }
+]

@@ -1,0 +1,231 @@
+<div class="container">
+    <section class="my-booking">
+        <h2 class="booking-titel">
+            My Bookings
+        </h2>
+        <div class="booking-tab">
+            <button [class.active-tab]="'tab1' == tab" (click)="booking_triger('tab1')">Ongoing</button>
+            <button [class.active-tab]="'tab2' == tab" (click)="booking_triger('tab2')">History</button>
+
+        </div>
+        <div class="booking-content">
+            <div @slideInOut *ngIf="'tab1' == tab" class="booking-target">
+                <ul class="professionals-list">
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>Physio Harley Street </p>
+                            <span>2:00 pm on 7th Oct. 2020</span>
+                            <div class="professionals-name">
+                                Kelly Mark
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.1<span>
+                                        (63 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 5487 6548</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>West 1 Physiotherapy</p>
+                            <span>6:00 pm on 3th Oct. 2020</span>
+                            <div class="professionals-name">
+                                Linda bros
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.3<span>
+                                        (36 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 4532 6548</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>Covent Garden Physiotherapy</p>
+                            <span>5:00 pm on 3rd Oct. 2020</span>
+                            <div class="professionals-name">
+                                jasica Adem
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.1<span>
+                                        (15 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 5756 7542</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>Kensington physio clinic </p>
+                            <span>3:00 pm on 10th Oct. 2020</span>
+                            <div class="professionals-name">
+                                Ketty John
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.1<span>
+                                        (45 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 4575 8723</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div @slideInOut *ngIf="'tab2' == tab" class="booking-target">
+                <ul class="professionals-list">
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>Physio Harley Street <span>Job Complited</span></p>
+                            <span>2:00 pm on 7th Oct. 2020</span>
+                            <div class="professionals-name">
+                                Kelly Mark
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.1<span>
+                                        (63 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 5487 6548</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>West 1 Physiotherapy<span>Job Complited</span></p>
+                            <span>6:00 pm on 3th Oct. 2020</span>
+                            <div class="professionals-name">
+                                Linda bros
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.3<span>
+                                        (36 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 4532 6548</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>Covent Garden Physiotherapy<span>Job Complited</span></p>
+                            <span>5:00 pm on 3rd Oct. 2020</span>
+                            <div class="professionals-name">
+                                jasica Adem
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.1<span>
+                                        (15 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 5756 7542</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="professionals-img">
+                            <img src="assets/img/hero.jpg" alt="img">
+                        </div>
+                        <div class="professionals-detail">
+                            <p>Kensington physio clinic <span>Job Complited</span></p>
+                            <span>3:00 pm on 10th Oct. 2020</span>
+                            <div class="professionals-name">
+                                Ketty John
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong style="color: #4caf50"><i class="fa fa-star" aria-hidden="true"></i> 4.1<span>
+                                        (45 Ratings)</span>
+                                </strong><span>Physiotherapist in London, England</span>
+                            </div>
+                            <div class="professionals-detail-inner">
+                                <strong>Phone :- </strong><span>+44 20 4575 8723</span>
+                            </div>
+                            <div class="booking-detail-button">
+                                <button class="btn"><i class="fa fa-question" aria-hidden="true"></i>
+                                    Need Help</button>
+                                <button class="btn"><i class="fa fa-file-o" aria-hidden="true"></i>
+                                    View Project</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="btn">BOOK A SERVICE</button>
+    </section>
+</div>

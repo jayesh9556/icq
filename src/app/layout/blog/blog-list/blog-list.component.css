@@ -1,0 +1,106 @@
+.blog-list-banne {
+    background-image: url("/assets/img/acupuncture-blog.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    height: 170px;
+}
+
+.blog-list-banne h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    font-size: 70px;
+}
+
+.blog-listing {
+    margin-top: 30px;
+}
+
+.blog-listing .container {
+    max-width: 700px;
+}
+
+.blog-list-img,
+.blog-list-content {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.blog-list-content {
+    padding-left: 20px;
+}
+
+.blog-list {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.blog-list-subtitel {
+    text-transform: uppercase;
+    font-size: 11px;
+    display: block;
+    color: var(--pink);
+}
+
+.blog-date {
+    color: var(--brown);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.blog-list-titel {
+    color: var(--black);
+    font-size: 22px;
+}
+
+.blog-list-desc {
+    font-size: 14px;
+    color: var(--brown);
+}
+
+.blog-list-content .fa {
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.blog-share {
+    font-size: 10px;
+    color: var(--brown);
+}
+
+.blog-list:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 1024px) {
+    .blog-list-banne h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-list-banne h1 {
+        font-size: 30px;
+    }
+    .blog-list-img,
+    .blog-list-content {
+        width: 100%;
+    }
+    .blog-list-content {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,182 @@
+<div class="container">
+    <div class="blog-slider mt-2 mb-4">
+        <section class="category">
+            <div *ngFor="let category of categorys" class="category-row-with-carousel">
+                <h3 class="blog-main-titel">Latest Posts</h3>
+                <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="category.category">
+                    <div *nguCarouselDef="let category" class="item">
+                        <div class="tile">
+                            <a routerLink="#">
+                                <img [src]="category.category_img" alt="img" />
+                                <span class="category-subtitel">{{category.category_titel}}</span>
+                                <span class="category-desc">{{category.category_desc}}</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button NguCarouselNext class="rightRs">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                    <button NguCarouselPrev class="leftRs">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </button>
+                </ngu-carousel>
+            </div>
+        </section>
+
+
+    </div>
+    <section class="blog-wrp">
+        <div class="blog">
+
+            <div class="blog-inner">
+                <a routerLink="blog-list">
+                    <h3 class="blog-main-titel">Acupuncture</h3>
+                </a>
+                <a routerLink="blog-list"><img src="assets/img/category1.jpg" alt="img"></a>
+                <span class="blog-date">August 19, 2019</span>
+                <a routerLink="blog-list">
+                    <h2 class="blog-titel">Lorem ipsum dolor sit amet consectetur</h2>
+                </a>
+                <p class="blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores accusantium! Obcaecati pariatur dolorem sit perferendis</p>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category1.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category1.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category1.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category1.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <button class="btn">View More</button>
+            </div>
+
+            <div class="blog-inner">
+                <a routerLink="blog-list">
+                    <h3 class="blog-main-titel">Chiropractor</h3>
+                </a>
+                <a routerLink="blog-list"><img src="assets/img/category2.jpg" alt="img"></a>
+                <span class="blog-date">August 19, 2019</span>
+                <a routerLink="blog-list">
+                    <h2 class="blog-titel">Lorem ipsum dolor sit amet consectetur</h2>
+                </a>
+                <p class="blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores accusantium! Obcaecati pariatur dolorem sit perferendis</p>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category2.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category2.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category2.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category2.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <button class="btn">View More</button>
+            </div>
+
+            <div class="blog-inner">
+                <a routerLink="blog-list">
+                    <h3 class="blog-main-titel">Massage therapist</h3>
+                </a>
+                <a routerLink="blog-list"><img src="assets/img/category3.jpg" alt="img"></a>
+                <span class="blog-date">August 19, 2019</span>
+                <a routerLink="blog-list">
+                    <h2 class="blog-titel">Lorem ipsum dolor sit amet consectetur</h2>
+                </a>
+                <p class="blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores accusantium! Obcaecati pariatur dolorem sit perferendis</p>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category3.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category3.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category3.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category3.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <button class="btn">View More</button>
+            </div>
+
+            <div class="blog-inner">
+                <a routerLink="blog-list">
+                    <h3 class="blog-main-titel">Osteopathy</h3>
+                </a>
+                <a routerLink="blog-list"><img src="assets/img/category4.jpg" alt="img"></a>
+                <span class="blog-date">August 19, 2019</span>
+                <a routerLink="blog-list">
+                    <h2 class="blog-titel">Lorem ipsum dolor sit amet consectetur</h2>
+                </a>
+                <p class="blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque similique eos labore, nam maiores accusantium! Obcaecati pariatur dolorem sit perferendis</p>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category4.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category4.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category4.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <div class="blog-list">
+                    <a routerLink="blog-list"><img src="assets/img/category4.jpg" alt="img">
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </a>
+                </div>
+                <button class="btn">View More</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3 class="blog-main-titel">I Care Quick App</h3>
+            <a href="#">
+                <img src="assets/img/google.png" alt=""></a>
+            <a href="#">
+                <img src="assets/img/apple.png" alt=""></a>
+            <h3 class="blog-main-titel">Follow us</h3>
+            <ul class="social-link">
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+    </section>
+</div>

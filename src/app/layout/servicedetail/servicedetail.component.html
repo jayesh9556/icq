@@ -1,0 +1,265 @@
+<section class="service-banner">
+    <div class="banner-overlay"></div>
+
+    <div class="container">
+        <ul class="breadcrumb">
+            <li>
+                <a href="#"><span>home</span></a><span>/</span>
+            </li>
+            <li>
+                <a href="#"><span>london</span></a><span>/</span>
+            </li>
+            <li>
+                <a href="#"><span>Physio</span></a>
+            </li>
+        </ul>
+
+        <div class="banner-content">
+            <h1>
+                Physio treatment in london
+            </h1>
+            <ul>
+                <li>Hands-on Physiotherapy Techniques</li>
+                <li>Physiotherapy Taping</li>
+                <li>Biomechanical Analysis</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="category">
+    <div class="container">
+        <div *ngFor="let category of categorys" class="category-row-with-carousel">
+            <h4 class="category-titel">{{ category.titel }}</h4>
+            <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="category.category">
+                <div *nguCarouselDef="let category" class="item">
+                    <div class="tile">
+                        <a href="JavaScript:void(0)" (click)="treatmentInput()">
+                            <img [src]="category.category_img" alt="img" />
+                            <span class="category-subtitel">{{
+                category.category_titel
+              }}</span>
+                        </a>
+                    </div>
+                </div>
+                <button NguCarouselNext class="rightRs">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+                <button NguCarouselPrev class="leftRs">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+            </ngu-carousel>
+        </div>
+    </div>
+</section>
+
+<div @fade class="common-model" *ngIf="commonModel">
+    <div (click)="modelclose()" class="model-overlay"></div>
+    <div class="model-body">
+        <i (click)="modelclose()" class="fa fa-times" aria-hidden="true"></i>
+
+        <!-- ==============treatment-start============= -->
+        <div *ngIf="treatment" class="treatment">
+            <h4>spinel treatment</h4>
+            <form (ngSubmit)="treatmentOnSubmit()" #treatmentForm="ngForm">
+                <div class="form-group">
+                    <span class="label">length of treatment required</span>
+                    <input class="treatment-lenth" id="1" type="checkbox" />
+                    <label for="1">30 Minute</label>
+                    <input class="treatment-lenth" id="2" type="checkbox" />
+                    <label for="2">1 hour</label>
+                </div>
+
+                <div class="form-group">
+                    <span class="label">number of sessions required</span>
+                    <div class="inc-den-wrp">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                        <span>1</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="label">when is session required ?</span>
+                    <input type="date" id="start" name="trip-start" value="2018-07-22" />
+                </div>
+
+                <div class="form-group">
+                    <span class="label">professional reference required (if know)</span>
+                    <input type="text" />
+                </div>
+
+                <div class="form-group">
+                    <span class="label">where do you want service ?</span>
+                    <button type="button" class="btn location-btn"><i class="fa fa-location-arrow" aria-hidden="true"></i>current
+            location</button>
+                    <button type="button" class="btn location-btn"><i class="fa fa-search" aria-hidden="true"></i>
+            choose other location</button>
+                </div>
+
+                <button type="submit" class="btn submit">Confirm Request</button>
+            </form>
+        </div>
+
+        <!-- ==============treatment-end============= -->
+
+        <!-- ============professionals-list-start============ -->
+
+        <div *ngIf="professionals" class="professionals">
+
+            <i (click)="backToTreatment()" class="fa fa-arrow-left" aria-hidden="true"></i>
+            <h4>Professionals
+                <span>89 physiotherapist in New London</span>
+            </h4>
+
+            <ul class="professionals-list">
+                <li (click)="bookAppointment()">
+                    <div class="professionals-img">
+                        <img src="assets/img/hero.jpg" alt="img">
+                    </div>
+                    <div class="professionals-detail">
+                        <p>Physio Harley Street</p>
+                        <span>1Ropemaker Street Citypoint Roman House, 296 Golders Green Rd, building, London EC2Y 9HT, United
+              Kingdom
+            </span>
+                        <div class="professionals-detail-inner">
+                            <strong><i class="fa fa-star" aria-hidden="true"></i> 4.1<span> (63 Ratings)</span>
+              </strong><span>Physiotherapist in London, England</span>
+                        </div>
+                        <div class="professionals-detail-inner opning-hour">
+                            <strong>Hours :- <span>Open</span></strong><span>Closes 8PM <i class="fa fa-caret-down"
+                  aria-hidden="true"></i></span>
+                        </div>
+                        <div class="professionals-detail-inner">
+                            <strong>Phone :- </strong><span>+44 20 5487 6548</span>
+                        </div>
+                    </div>
+                </li>
+                <li (click)="bookAppointment()">
+                    <div class="professionals-img">
+                        <img src="assets/img/hero.jpg" alt="img">
+                    </div>
+                    <div class="professionals-detail">
+                        <p>West 1 Physiotherapy</p>
+                        <span>22 Harley St, Marylebone, London W1G 9PL, 296 Golders Green Rd, building, London EC2Y 9HT, United
+              Kingdom
+            </span>
+                        <div class="professionals-detail-inner">
+                            <strong><i class="fa fa-star" aria-hidden="true"></i> 4.9<span> (35 Ratings)</span>
+              </strong><span>Physiotherapist in London, England</span>
+                        </div>
+                        <div class="professionals-detail-inner opning-hour">
+                            <strong>Hours :- <span>Open</span></strong><span>Closes 8PM <i class="fa fa-caret-down"
+                  aria-hidden="true"></i></span>
+                        </div>
+                        <div class="professionals-detail-inner">
+                            <strong>Phone :- </strong><span>+44 20 7935 5652</span>
+                        </div>
+                    </div>
+                </li>
+                <li (click)="bookAppointment()">
+                    <div class="professionals-img">
+                        <img src="assets/img/hero.jpg" alt="img">
+                    </div>
+                    <div class="professionals-detail">
+                        <p>Covent Garden Physiotherapy</p>
+                        <span>1 Somerset House, Strand, London WC2R 1LA, 296 Golders Green Rd, building, London EC2Y 9HT, United
+              Kingdom
+            </span>
+                        <div class="professionals-detail-inner">
+                            <strong><i class="fa fa-star" aria-hidden="true"></i> 5.0<span> (57 Ratings)</span>
+              </strong><span>Physiotherapist in London, England</span>
+                        </div>
+                        <div class="professionals-detail-inner opning-hour">
+                            <strong>Hours :- <span>Open</span></strong><span>Closes 8PM <i class="fa fa-caret-down"
+                  aria-hidden="true"></i></span>
+                        </div>
+                        <div class="professionals-detail-inner">
+                            <strong>Phone :- </strong><span>+44 20 7497 8974</span>
+                        </div>
+                    </div>
+                </li>
+                <li (click)="bookAppointment()">
+                    <div class="professionals-img">
+                        <img src="assets/img/hero.jpg" alt="img">
+                    </div>
+                    <div class="professionals-detail">
+                        <p>Kensington physio clinic</p>
+                        <span>29 Harrington Rd, South Kensington, London SW7 3HQ, 296 Golders Green Rd, building, London EC2Y 9HT,
+              United
+              Kingdom
+            </span>
+                        <div class="professionals-detail-inner">
+                            <strong><i class="fa fa-star" aria-hidden="true"></i> 4.2<span> (18 Ratings)</span>
+              </strong><span>Physiotherapist in London, England</span>
+                        </div>
+                        <div class="professionals-detail-inner opning-hour">
+                            <strong>Hours :- <span>Open</span></strong><span>Closes 8PM <i class="fa fa-caret-down"
+                  aria-hidden="true"></i></span>
+                        </div>
+                        <div class="professionals-detail-inner">
+                            <strong>Phone :- </strong><span> +44 7940 165305</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- ============professionals-list-end============ -->
+
+
+        <!-- ============estimation-start============ -->
+
+        <div *ngIf="estimation" class="estimation">
+
+            <i (click)="backToProfessionals()" class="fa fa-arrow-left" aria-hidden="true"></i>
+            <h4>Waiting Time & Price Calculator<span>Estimated Waiting Time <strong>48 Hrs</strong> </span></h4>
+            <div class="estimation-table">
+                <h5>Price Calculation</h5>
+
+                <ul class="estimation-list">
+                    <li>
+                        <div class="selected-service">
+                            <p>Physiotherapy</p>
+                            <span>30 Minets</span>
+                            <i>London</i>
+                        </div>
+                        <span class="selected-service-price">
+              <b>$</b>60
+            </span>
+                    </li>
+                    <li>
+                        <div class="selected-service">
+                            <p>Acupuncture</p>
+                            <span>1 Hour</span>
+                            <i>London</i>
+                        </div>
+                        <span class="selected-service-price">
+              <b>$</b>100
+            </span>
+                    </li>
+                    <li>
+                        <div class="selected-service">
+                            <p>electrotherapy</p>
+                            <span>30 Minets</span>
+                            <i>London</i>
+                        </div>
+                        <span class="selected-service-price">
+              <b>$</b> 70
+            </span>
+                    </li>
+                </ul>
+                <span class="total-cost">
+          <strong>Total</strong>$ 230
+        </span>
+                <button type="submit" class="btn submit">Confirm</button>
+            </div>
+
+        </div>
+
+
+        <!-- ============estimation-end============ -->
+
+    </div>
+</div>

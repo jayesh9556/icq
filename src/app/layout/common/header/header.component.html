@@ -1,0 +1,284 @@
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <div (click)="mobilemenu()" class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div [class.menuopen]="menuopen" class="navmenu-wrp">
+            <i (click)="menuclose()" class="fa fa-times" aria-hidden="true"></i>
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="menuclose()" routerLink="/home" routerLinkActive="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="menuclose()" routerLink="/servicedetail" routerLinkActive="active">Service-Detail</a>
+                    <i (click)="subMenuToggle('submenu-1')" [class.submenu-arrow-rotate]="'submenu-1' == isSubmenu" class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <ul class="submenu" [class.submenu-open]="'submenu-1' == isSubmenu">
+                        <li><a routerLink="/servicedetail">Acupuncture</a></li>
+                        <li><a routerLink="/servicedetail">Chiropractor</a></li>
+                        <li><a routerLink="/servicedetail">Massage therapist</a></li>
+                        <li><a routerLink="/servicedetail">Osteopathy</a></li>
+                        <li><a routerLink="/servicedetail">Personal Trainer</a></li>
+                        <li><a routerLink="/servicedetail">Physio</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="menuclose()" routerLink="/about" routerLinkActive="active">About Us</a>
+                    <i (click)="subMenuToggle('submenu-2')" [class.submenu-arrow-rotate]="'submenu-2' == isSubmenu" class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <ul class="submenu" [class.submenu-open]="'submenu-2' == isSubmenu">
+                        <li><a routerLink="/servicedetail">About-Us</a></li>
+                        <li><a routerLink="/servicedetail">About-Us</a></li>
+                        <li><a routerLink="/servicedetail">About-Us</a></li>
+                        <li><a routerLink="/servicedetail">About-Us</a></li>
+                        <li><a routerLink="/servicedetail">About-Us</a></li>
+                        <li><a routerLink="/servicedetail">About-Us</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" *ngIf="isMyBooking">
+                    <a class="nav-link" (click)="menuclose()" routerLink="/mybooking" routerLinkActive="active">My-Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="menuclose()" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navmenu login-signup">
+                <li class="nav-item" *ngIf="isUserRegister">
+                    <a class="nav-link" (click)="modelopen()" (click)="menuclose()" routerLinkActive="active">Login / Sign Up</a>
+                </li>
+                <li class="nav-item" *ngIf="!isUserRegister">
+                    <a class="nav-link" (click)="menuclose()" routerLinkActive="active"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                </li>
+                <li class="nav-item" *ngIf="!isUserRegister">
+                    <a class="nav-link" (click)="menuclose()" routerLinkActive="active"><i class="fa fa-arrow-right" aria-hidden="true"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- 
+<div class="container">
+
+    <div class="form-group">
+        <label>Enter address</label>
+        <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+    </div>
+
+    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
+    </agm-map>
+
+    <h5>Address: {{address}}</h5>
+    <div>Latitude: {{latitude}}</div>
+    <div>Longitude: {{longitude}}</div>
+
+    <button class="btn m-5 btn-primary" (click)="getlocationstring()">get location</button>
+    <p>locationnn{{locationstring}}</p>
+</div> -->
+
+
+
+
+
+<div @fade class="common-model" *ngIf="commonModel">
+    <div (click)="modelclose()" class="model-overlay"></div>
+    <div class="model-body">
+        <i (click)="modelclose()" class="fa fa-times" aria-hidden="true"></i>
+
+
+        <!-- ==============registration-start============== -->
+
+        <form *ngIf="registrationForm" class="registration" (ngSubmit)="onregistrationSubmit(registrationForm)" #registrationForm="ngForm">
+            <img class="logo" src="assets/img/logo.png" alt="logo" />
+            <p>your Physio Expert</p>
+            <ul>
+                <li>quick</li>
+                <li>Affordable</li>
+                <li>Trusted</li>
+            </ul>
+            <div class="company-app-input">
+                <span (click)="modelopen()" class="flag">
+                    <img src="assets/img/london.jpg" alt="img" />
+                    <span class="pre-number">+44</span>
+                </span>
+                <div class="form-group">
+                    <input [pattern]="mobNumberPattern" required minlength="10" maxlength="10" ngModel name="mobileNumber" type="tel" #mobileNumber="ngModel" class="form-control" id="mobileNumber">
+
+                </div>
+            </div>
+            <div *ngIf="mobileNumber.touched && !mobileNumber.valid">
+                <div class="validation-msg" *ngIf="mobileNumber.errors.required">mobileNumber is required</div>
+                <div class="validation-msg" *ngIf="mobileNumber.errors.pattern">Invalid Number</div>
+                <div class="validation-msg" *ngIf="mobileNumber.errors.minlength">minimum {{ mobileNumber.errors.minlength.requiredLength }} character
+                </div>
+            </div>
+            <button class="btn" type="submit">Continue</button>
+
+
+        </form>
+
+
+        <!-- ==============registration-end============== -->
+
+
+
+
+        <!-- ==============registration-otp-start============== -->
+
+
+        <form *ngIf="registrationOtpForm" class="registration-otp" (ngSubmit)="onregistrationOtpFormSubmit(registrationOtpForm)" #registrationOtpForm="ngForm">
+            <i (click)="registrationNumberEdit()" class="fa fa-arrow-left" aria-hidden="true"></i>
+            <h3>Enter OTP</h3>
+            <h5 style="color:#f00;">receved Otp {{otpReceved}}</h5>
+            <p> OTP sent on {{mobileNumber}}<span (click)="registrationNumberEdit()" class="reg-num-edit">Edit</span>
+            </p>
+
+
+
+            <input [pattern]="otpPattern" required minlength="4" maxlength="4" type="tel" ngModel name="otp" #otp="ngModel" class="form-control" id="otp">
+
+            <div class="validation-msg" *ngIf="otpMatch">otp not match</div>
+
+            <div class="validation-msg" *ngIf="otp.touched && !otp.valid">
+                <div *ngIf="otp.errors.required">Otp is required</div>
+                <div *ngIf="otp.errors.pattern">Invalid otp</div>
+                <div *ngIf="otp.errors.minlength">minimum {{ otp.errors.minlength.requiredLength }} character
+                </div>
+            </div>
+
+
+            <span *ngIf="isTimeLeft" class="opt-time">{{timeLeft}}:00</span>
+
+            <a href="javascript:void(0)" class="resend-otp" *ngIf="isResendOtp" (click)="resendOtp()">Resend OTP</a>
+
+            <button class="btn" type="submit">Login</button>
+
+            <!-- [disabled]="!registrationOtpForm.form.valid" -->
+
+        </form>
+
+
+        <!-- ==============registration-otp-end============== -->
+
+
+        <!-- ================geo-location-start================= -->
+
+        <div *ngIf="geolocation" class="geolocation">
+
+            <i (click)="backToOtpForm()" class="fa fa-arrow-left" aria-hidden="true"></i>
+
+            <h4>Hello, Welcome to I Care Quick!<span>Look our service around</span></h4>
+
+            <button (click)="currentGeoLocationSearch()" type="button" class="btn location-btn"><i
+                    class="fa fa-location-arrow" aria-hidden="true"></i>current
+                location</button>
+            <button (click)="otherGeoLocationSearch()" type="button" class="btn location-btn"><i class="fa fa-search"
+                    aria-hidden="true"></i>
+                choose other location</button>
+            <img class="geolocation-img" src="assets/img/geo-location.png" alt="img">
+        </div>
+
+        <!-- ================geo-location-end================= -->
+
+
+
+
+
+        <!-- ============== geo-location-search-start ================ -->
+
+
+        <div *ngIf="geolocationSearch" class="geolocation-search">
+            <h4>Please Choose your Location</h4>
+            <i (click)="backToGeolocation()" class="fa fa-arrow-left" aria-hidden="true"></i>
+            <div class="geolocation-search-input">
+                <input (keyup)="enterCustomeLocation()" type="text" placeholder="Search for society, landmark...">
+                <span>eg. C Block, Edgware</span>
+            </div>
+            <button type="button" class="btn location-btn"><i class="fa fa-location-arrow" aria-hidden="true"></i>Use
+                current
+                location</button>
+
+            <ul *ngIf="geolocationlist" class="geolocation-list">
+                <li (click)="geolocationforminput()">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Edgware
+                    <span>UK</span>
+                </li>
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Edgware Road
+                    <span>Londo, UK</span>
+                </li>
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Edgware Station
+                    <span>Edgware, UK</span>
+                </li>
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Edgware Road Station
+                    <span>Londo, UK</span>
+                </li>
+                <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> Edgware Community Hospital
+                    <span>Burnt Oak Broadway, Edgware, UK</span>
+                </li>
+            </ul>
+            <img *ngIf="geolocationImg" class="geolocation-img" src="assets/img/geo-location.png" alt="img">
+
+        </div>
+
+
+        <!-- ============== geo-location-search-end ================ -->
+
+
+
+
+
+        <!-- ============== geo-location-form-start ================ -->
+
+        <div *ngIf="geolocationformblock" class="geolocationform">
+            <h4>Please Choose your Location</h4>
+            <i (click)="backTogeolocationSearch()" class="fa fa-arrow-left" aria-hidden="true"></i>
+            <div class="geolocationform-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39646.47912977161!2d-0.3034262967615777!3d51.60663024067993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1586845441266!5m2!1sen!2sin" width="100%" height="100%" frameborder="0"
+                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <form class="geolocationform-inner" (ngSubmit)="geolocationonFormSubmit()" #geolocationForm="ngForm">
+                <div class="form-group">
+                    <span class="geolocationtitel">Your Location</span>
+                    <span class="geolocationselected">Edgware Station Edgware, UK</span>
+                    <a href="" class="geolocationchange">CHANGE</a>
+                </div>
+                <div class="form-group">
+                    <span class="geolocationtitel">Flat/ Building/ Street</span>
+                    <input style="border: none;" class="geolocationselected" placeholder="C Block, Edgware ..." type="text">
+                </div>
+                <div class="form-group">
+                    <span class="geolocationtitel">Your Name</span>
+                    <input style="border: none;" class="geolocationselected" placeholder="eric jonson ..." type="text">
+                </div>
+                <div class="form-group geolocation-type">
+                    <span class="geolocationtitel">Save as</span>
+                    <a href="" class="active">Home</a>
+                    <a href="" class="">Office</a>
+                    <a href="" class="">Other</a>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- ============== geo-location-form-end ================ -->
+
+
+
+
+
+
+    </div>
+</div>

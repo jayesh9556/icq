@@ -1,0 +1,181 @@
+<section class="banner">
+
+    <div class="banner-overlay"></div>
+    <ul class="breadcrumb pl-5">
+        <li>
+            <a href="#"><span>home</span></a><span>/</span>
+        </li>
+        <li>
+            <a href="#"><span>london</span></a>
+        </li>
+    </ul>
+    <div class="banner-content">
+        <h1 class="banner-titel">Your Physiotherapy Expert in London</h1>
+        <p class="banner-desc">
+            Get instant access to reliable and affordable services
+        </p>
+        <div class="banner-input">
+            <div class="form-group">
+                <img src="assets/img/london.jpg" alt="flag">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <input type="text" class="form-control" placeholder="Manchester" />
+            </div>
+            <div class="form-group">
+                <input type="search" class="form-control" placeholder="Search for a service..." />
+                <span>Eg. Mobile Physiotherapy, Chiropractor, Osteopath</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service">
+    <div class="container">
+        <ul class="service-inner">
+            <li *ngFor="let service of services">
+                <a href="#"><img [src]="service.service_img" alt="img" />
+                    <span>{{ service.service_titel }}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="category">
+    <div class="container">
+        <div *ngFor="let category of categorys" class="category-row-with-carousel">
+            <h4 class="category-titel">{{ category.titel }}</h4>
+            <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="category.category">
+                <div *nguCarouselDef="let category" class="item">
+                    <div class="tile">
+                        <a routerLink="/servicedetail">
+                            <img [src]="category.category_img" alt="img" />
+                            <span class="category-subtitel">{{
+                category.category_titel
+              }}</span>
+                        </a>
+                    </div>
+                </div>
+                <button NguCarouselNext class="rightRs">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+                <button NguCarouselPrev class="leftRs">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+            </ngu-carousel>
+        </div>
+    </div>
+</section>
+
+<section class="company-app">
+    <div class="container">
+        <div class="download-app">
+            <div class="company-app-img">
+                <img src="assets/img/app.jpg" alt="img" />
+            </div>
+            <div class="company-app-content">
+                <h2 class="company-app-titel">Get the I Care Quick app</h2>
+                <p class="company-app-subtitel">
+                    Enter your mobile number to receive the app download link
+                </p>
+                <div class="company-app-input">
+                    <span (click)="modelopen()" class="flag">
+                        <img [src]="selectedCountrieimg" alt="img" />
+                        <span class="pre-number">{{ selectedCountrieCode }}</span>
+                    </span>
+                    <span class="company-app-input-trigger"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Mobile number" />
+                    </div>
+                    <button class="btn" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantage">
+    <div class="container">
+        <div class="advantage-inner">
+            <div class="advantage-icon">
+                <img src="assets/img/advantage-1.png" alt="img" />
+            </div>
+            <div class="advantage-content">
+                <h3 class="advantage-titel">Find a Local Physiotherapist</h3>
+                <p class="advantage-subtitel">
+                    You can search for your conditions, types of physiotherapy or search by location.
+                </p>
+            </div>
+        </div>
+        <div class="advantage-inner">
+            <div class="advantage-icon">
+                <img src="assets/img/advantage-2.png" alt="img" />
+            </div>
+            <div class="advantage-content">
+                <h3 class="advantage-titel">Choose Your Schedule</h3>
+                <p class="advantage-subtitel">
+                    Select your preferred date and time, and make a booking online in just a minute.
+                </p>
+            </div>
+        </div>
+        <div class="advantage-inner">
+            <div class="advantage-icon">
+                <img src="assets/img/advantage-3.png" alt="img" />
+            </div>
+            <div class="advantage-content">
+                <h3 class="advantage-titel">Make a Payment</h3>
+                <p class="advantage-subtitel">
+                    Pay for the booking through our secured online payment to secure your appointment.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="counter">
+    <div class="container">
+        <div class="counter-inner">
+            <span class="counter-number">
+                <div [countFrom]="0" [countTo]="5" counto [step]="400" [duration]="2" (countoChange)="counto = $event"
+                    (countoEnd)="onCountoEnd()">
+                    {{ counto }} million
+                </div>
+            </span>
+            <p class="counter-content">Customers Served</p>
+        </div>
+        <div class="counter-inner">
+            <span class="counter-number">
+                <div [countFrom]="0" [countTo]="1000" counto [step]="100" [duration]="2"
+                    (countoChange)="counto1 = $event" (countoEnd)="onCountoEnd()">
+                    {{ counto1 }}
+                </div>
+            </span>
+            <p class="counter-content">Trained Professionals</p>
+        </div>
+        <div class="counter-inner">
+            <span class="counter-number">
+                <div [countFrom]="0" [countTo]="90000" counto [step]="100" [duration]="2"
+                    (countoChange)="counto2 = $event" (countoEnd)="onCountoEnd()">
+                    {{ counto2 }}
+                </div>
+            </span>
+            <p class="counter-content">Average Rating</p>
+        </div>
+    </div>
+</section>
+
+<div @fade class="common-model" *ngIf="commonModel">
+    <div (click)="modelclose()" class="model-overlay"></div>
+    <div class="model-body">
+        <i (click)="modelclose()" class="fa fa-times" aria-hidden="true"></i>
+        <ul>
+            <li (click)="selectedCountrie(countrie)" *ngFor="let countrie of countries; let i = index">
+                <span class="flag">
+                    <img [src]="countrie.countries_img" alt="img" />
+                    <span class="pre-number">{{ countrie.countries_number }}</span>
+                <span>{{ countrie.countries_titel }}</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <ul>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/terms">Terms & Conditions</a></li>
+                <li><a routerLink="/policy">Privacy Policy</a></li>
+                <li><a routerLink="/blog">Blog</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Near Me</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-middel">
+            <p class="footer-titel">Serving in</p>
+            <ul>
+                <li *ngFor="let serving of servings">
+                    <span class="footer-subtitel">{{serving.titel}}</span>
+                    <ul>
+                        <li *ngFor="let serving_city of serving.serving">
+                            <a [attr.href]="serving_city.serving_link">{{serving_city.serving_titel}}</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <a href="#"><img src="assets/img/footer-logo.png" alt="img"></a>
+                <span>Copyright © 2020 I Care Quick. All Rights Reserved</span>
+            </div>
+            <ul class="social-link">
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="app-download">
+                <a href="#"><img src="assets/img/google.png" alt="img"></a>
+                <a href="#"><img src="assets/img/apple.png" alt="img"></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+[
+  {
+    "service_img": "assets/img/service-icon-1.png",
+    "service_titel": "Physiotherapy Clinic"
+  },
+  {
+    "service_img": "assets/img/service-icon-2.png",
+    "service_titel": "Mobile Physiotherapy"
+  },
+  {
+    "service_img": "assets/img/service-icon-3.png",
+    "service_titel": "Virtual Physiotherapy"
+  },
+  {
+    "service_img": "assets/img/service-icon-4.png",
+    "service_titel": "Weekend Physiotherapy"
+  },
+  {
+    "service_img": "assets/img/service-icon-5.png",
+    "service_titel": "Physiotherapy Shop"
+  }
+] 

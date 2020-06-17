@@ -1,0 +1,127 @@
+
+
+<!-- <section class="question-card">
+  <div class="question-card-inner">
+    <div class="question-card-titel">spinal treatment Expert for:</div>
+    <button>
+      <p>Minimally Invasive</p>
+      <span><i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+    </button>
+    <button>
+      <p>Vascular Malformation Excision</p>
+      <span><i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+    </button>
+    <button>
+      <p>pinal cord stimulator</p>
+      <span><i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+    </button>
+  </div>
+  <div class="question-card-rating">
+    <div class="question-card-rating-inner">
+      <span>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </span>
+      <span>
+        4.7
+        <span class="max-rating">
+          /5
+        </span>
+      </span>
+      <p>based on 1010 ratings</p>
+    </div>
+    <div class="question-card-rating-inner">
+      <span>18,000</span>
+      <p>Bookings done in last 1 year</p>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+
+/* .question-card {
+  position: fixed;
+  top: 52%;
+  border-radius: 4px;
+  transform: translateY(-50%);
+  right: calc(50% - 588px);
+  z-index: 2;
+  width: 360px;
+  padding-bottom: 0 !important;
+  border-bottom: none;
+  box-shadow: 0 13px 31px -5px rgba(0, 0, 0, 0.18);
+}
+.question-card-inner {
+  background-image: linear-gradient(130deg, #642b73, #c6426e);
+  padding: 20px 24px 26px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+}
+.question-card-titel {
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0 0 16px;
+}
+.question-card-inner button {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: none;
+  min-width: 248px;
+  max-width: 300px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background-position: 50%;
+}
+.question-card-inner button p {
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.4;
+  flex: 1;
+}
+.question-card-inner button span {
+  font-size: 20px;
+}
+.question-card-rating {
+  border-bottom-left-radius: 4px;
+  text-align: left;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 24px;
+  margin: 0;
+  background-color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.question-card-rating-inner {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+.question-card-rating-inner:first-child {
+  padding-right: 15px;
+}
+.question-card-rating-inner span {
+  font-size: 27px;
+  color: #228d27;
+}
+.question-card-rating-inner:last-child span {
+  font-weight: 700 !important;
+  color: #212121;
+}
+.question-card-rating-inner .max-rating {
+  font-size: 18px;
+}
+.question-card-rating-inner p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #757575;
+} */
