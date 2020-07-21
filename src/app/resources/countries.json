@@ -2,22 +2,21 @@
     {
         "countries_img": "assets/img/london.jpg",
         "countries_number": "+44",
-        "countries_titel": "london"
+        "countries_titel": "uk"
     },
     {
-        "countries_img": "assets/img/india.jpg",
-        "countries_number": "+91",
-        "countries_titel": "india"
+        "countries_img": "assets/img/usa.jpg",
+        "countries_number": "+1",
+        "countries_titel": "usa"
     },
     {
-        "countries_img": "assets/img/Arab.jpg",
-        "countries_number": "+971",
-        "countries_titel": "United Arab Emirates"
+        "countries_img": "assets/img/canada.jpg",
+        "countries_number": "+1",
+        "countries_titel": "canada"
     },
     {
-        "countries_img": "assets/img/singapore.jpg",
-        "countries_number": "+65",
-        "countries_titel": "singapore"
+        "countries_img": "assets/img/australia.jpg",
+        "countries_number": "+61",
+        "countries_titel": "australia"
     }
-    
 ]

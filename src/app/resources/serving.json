@@ -96,31 +96,6 @@
                 "serving_titel": "Manchester"
             }
         ]
-    },
-    {
-        "titel": "UAE",
-        "serving": [
-            {
-                "serving_link": "https://www.google.com/",
-                "serving_titel": "Dubai"
-            },
-            {
-                "serving_link": "https://www.google.com/",
-                "serving_titel": "Abu Dhabi"
-            }
-        ]
-    },
-    {
-        "titel": "SGP",
-        "serving": [
-            {
-                "serving_link": "https://www.google.com/",
-                "serving_titel": "Singapore"
-            },
-            {
-                "serving_link": "https://www.google.com/",
-                "serving_titel": "kuala lumpur"
-            }
-        ]
     }
+   
 ]

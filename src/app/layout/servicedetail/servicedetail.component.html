@@ -60,18 +60,18 @@
 
         <!-- ==============treatment-start============= -->
         <div *ngIf="treatment" class="treatment">
-            <h4>spinel treatment</h4>
+            <h4>spinal treatment</h4>
             <form (ngSubmit)="treatmentOnSubmit()" #treatmentForm="ngForm">
                 <div class="form-group">
-                    <span class="label">length of treatment required</span>
-                    <input class="treatment-lenth" id="1" type="checkbox" />
+                    <span class="label">Length of treatment required</span>
+                    <input class="treatment-lenth" id="1" type="checkbox" checked/>
                     <label for="1">30 Minute</label>
                     <input class="treatment-lenth" id="2" type="checkbox" />
                     <label for="2">1 hour</label>
                 </div>
 
                 <div class="form-group">
-                    <span class="label">number of sessions required</span>
+                    <span class="label">Number of sessions required</span>
                     <div class="inc-den-wrp">
                         <i class="fa fa-minus" aria-hidden="true"></i>
                         <span>1</span>
@@ -80,17 +80,17 @@
                 </div>
 
                 <div class="form-group">
-                    <span class="label">when is session required ?</span>
+                    <span class="label">When is session required ?</span>
                     <input type="date" id="start" name="trip-start" value="2018-07-22" />
                 </div>
 
                 <div class="form-group">
-                    <span class="label">professional reference required (if know)</span>
+                    <span class="label">Professional reference required (if known)</span>
                     <input type="text" />
                 </div>
 
                 <div class="form-group">
-                    <span class="label">where do you want service ?</span>
+                    <span class="label">Where do you want service ?</span>
                     <button type="button" class="btn location-btn"><i class="fa fa-location-arrow" aria-hidden="true"></i>current
             location</button>
                     <button type="button" class="btn location-btn"><i class="fa fa-search" aria-hidden="true"></i>
