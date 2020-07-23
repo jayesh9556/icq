@@ -22,6 +22,7 @@ import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { BlogComponent } from './blog/blog.component';
 import { CommonService } from './shared/services/common.service';
+import { ServicedetailinnerComponent } from './servicedetailinner/servicedetailinner.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CommonService } from './shared/services/common.service';
     TermsComponent,
     PolicyComponent,
     BlogComponent,
+    ServicedetailinnerComponent,
   ],
   imports: [
     CommonModule,

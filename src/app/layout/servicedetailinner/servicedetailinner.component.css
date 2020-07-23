@@ -1,0 +1,151 @@
+.page-titel {
+    color: #424242;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    background-color: #f7f8fa;
+    border-bottom: 1px solid #e2e2e2;
+}
+.fa-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.fa-times {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.servicedetailinner {
+    display: flex;
+}
+.tabber {
+    width: 30%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.tabber-content {
+    width: 70%;
+    border-left: 1px solid #dbdbdb;
+    padding-left: 30px;
+    max-width: 400px;
+}
+.tabber > li {
+    margin: 0 28px 12px auto;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    cursor: pointer;
+    color: #757575;
+    border: 1px solid #bdbdbd;
+    background-color: #fff;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    text-align: right;
+}
+.tabber > li.active {
+    color: #fff;
+    border-color: #212121;
+    background-color: #212121;
+}
+.main-titel {
+    font-size: 24px;
+    color: #212121;
+    margin: 20px 0;
+}
+
+.tabber-trigger > li {
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.listing {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.listing > h6 {
+    color: #fff;
+    background-color: #4179ea;
+    font-size: 8px;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    padding-top: 25px;
+    border-radius: 7px;
+}
+.detail {
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+.detail > p {
+    color: #252525;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.price {
+    font-size: 12px;
+    font-weight: 500;
+    color: #212121;
+}
+.price > del {
+    font-size: 10px;
+    font-weight: 400;
+    color: #757575;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.price > i {
+    border: 1px solid #757575;
+    color: #757575;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.duration {
+    display: block;
+    font-size: 12px;
+    color: #757575;
+}
+.duration > i {
+    margin-right: 10px;
+}
+.validmsg {
+    display: block;
+    border-top: 1px solid #dbdbdb;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #757575;
+}
+.tabber-trigger > li > a {
+    color: #304ffe;
+    font-size: 18px;
+}
+.tabber-trigger > li > a > i {
+    margin-left: 5px;
+}
+.counter {
+    display: flex;
+    border: 1px solid #417aed;
+    align-items: center;
+    color: #417aed;
+    cursor: pointer;
+}
+.counter > span,
+.counter > i {
+    font-size: 14px;
+    line-height: normal;
+    padding: 3px;
+}

@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { BlogComponent } from './blog/blog.component';
+import { ServicedetailinnerComponent } from './servicedetailinner/servicedetailinner.component';
+
 
 const routes: Routes = [
   {
@@ -19,6 +21,7 @@ const routes: Routes = [
       { path: "home", component: HomeComponent },
       { path: "about", component: AboutComponent },
       { path: "servicedetail", component: ServicedetailComponent },
+      { path: "servicedetailinner", component: ServicedetailinnerComponent },
       { path: "mybooking", component: MybookingComponent },
       { path: "contact", component: ContactComponent },
       { path: "terms", component: TermsComponent },
