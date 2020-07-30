@@ -10,6 +10,7 @@ import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { BlogComponent } from './blog/blog.component';
 import { ServicedetailinnerComponent } from './servicedetailinner/servicedetailinner.component';
+import { DeliveryAddressComponent } from './delivery-address/delivery-address.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,7 @@ const routes: Routes = [
     path: "",
     component: LayoutComponent,
     children: [
-      { path: "", redirectTo: "/home", pathMatch: "full" },
+      { path: "", redirectTo: "/DeliveryAddress", pathMatch: "full" },
       { path: "home", component: HomeComponent },
       { path: "about", component: AboutComponent },
       { path: "servicedetail", component: ServicedetailComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
       { path: "contact", component: ContactComponent },
       { path: "terms", component: TermsComponent },
       { path: "policy", component: PolicyComponent },
-      { path: 'blog', loadChildren: () => import('./blog/Blog.module').then(m => m.BlogModule) }
+      { path: 'blog', loadChildren: () => import('./blog/Blog.module').then(m => m.BlogModule) },
+      { path: "DeliveryAddress", component: DeliveryAddressComponent },
     ],
   },
 ];

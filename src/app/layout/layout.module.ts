@@ -23,6 +23,7 @@ import { PolicyComponent } from './policy/policy.component';
 import { BlogComponent } from './blog/blog.component';
 import { CommonService } from './shared/services/common.service';
 import { ServicedetailinnerComponent } from './servicedetailinner/servicedetailinner.component';
+import { DeliveryAddressComponent } from './delivery-address/delivery-address.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ServicedetailinnerComponent } from './servicedetailinner/servicedetaili
     PolicyComponent,
     BlogComponent,
     ServicedetailinnerComponent,
+    DeliveryAddressComponent,
   ],
   imports: [
     CommonModule,
