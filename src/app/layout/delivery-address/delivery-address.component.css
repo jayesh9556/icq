@@ -40,13 +40,16 @@
 .Address-list > li > span.place {
     display: inline-block;
     position: relative;
-    background-color: #4caf50;
-    color: #fff;
+    color: #757575;
     font-size: 12px;
     padding: 5px;
     line-height: 1em;
     margin-bottom: 10px;
     padding-right: 30px;
+}
+.Address-list > li > span.default-place {
+    background-color: #4caf50;
+    color: #fff;
 }
 .name {
     margin-bottom: 10px;
